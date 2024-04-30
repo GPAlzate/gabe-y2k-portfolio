@@ -15,8 +15,8 @@ const LeftAlignedCenter = styled(Center)`
 `;
 
 const PortfolioContent = styled(ScrollView)`
-  width: 250px;
-  margin: 1rem 0;
+  width: 300px;
+  margin: 0.5rem -0.5rem;
   background: ${({ theme }) => theme.canvas};
 `;
 
@@ -32,7 +32,7 @@ const PortfolioContent = styled(ScrollView)`
                 </span>
               </WindowHeader>
               <WindowContent>
-                <PortfolioContent></PortfolioContent>
+                <PortfolioContent>test</PortfolioContent>
               </WindowContent>
             </Window>
           </ThemeProvider>
