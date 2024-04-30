@@ -1,7 +1,9 @@
-import React from 'react';
+import React, { Component } from "react";
 import ReactFullpage from "@fullpage/react-fullpage";
 import { MenuList, MenuListItem, Separator, styleReset } from 'react95';
 import styled, { createGlobalStyle, ThemeProvider } from 'styled-components';
+
+import PortfolioWindow from "./components/PortfolioWindow";
 
 
 /* Pick a theme of your choice */
@@ -34,7 +36,7 @@ const GlobalStyles = createGlobalStyle`
 const Main = styled.main`
   width: 100%;
   height: 100%;
-  background: teal;
+  background: mintcream;
 `;
 
 // page style: centered, full page
@@ -45,30 +47,29 @@ const Section = styled.section`
   text-align: center;
 `;
 
-const App = () => (
-  <div>
-    <GlobalStyles />
-    <ThemeProvider theme={original}>
-      <Main>
-        <ReactFullpage
-          render = { ({ state, fullPageApi }) => {
-            return (
-              <ReactFullpage.Wrapper>
-                <Section className='section'>
-                  <MenuList>
-                    <MenuListItem>🎤 Sing</MenuListItem>
-                    <MenuListItem>💃🏻 Dance</MenuListItem>
-                    <Separator />
-                    <MenuListItem disabled>😴 Sleep</MenuListItem>
-                  </MenuList>
-                </Section>
-              </ReactFullpage.Wrapper>
-            );
-          }}
-        />
-      </Main>
-    </ThemeProvider>
-  </div>
-);
+class App extends Component {
+  render() {
+    return (
+      <div>
+        <GlobalStyles />
+        <ThemeProvider theme={original}>
+          <Main>
+            <ReactFullpage
+              render={({ state, fullPageApi }) => {
+                return (
+                  <ReactFullpage.Wrapper>
+                    <Section className='section'>
+                      <PortfolioWindow />
+                    </Section>
+                  </ReactFullpage.Wrapper>
+                );
+              }}
+            />
+          </Main>
+        </ThemeProvider>
+      </div>
+    );
+  }
+}
 
 export default App;
