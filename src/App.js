@@ -1,6 +1,8 @@
 import React from 'react';
+import ReactFullpage from "@fullpage/react-fullpage";
 import { MenuList, MenuListItem, Separator, styleReset } from 'react95';
 import styled, { createGlobalStyle, ThemeProvider } from 'styled-components';
+
 
 /* Pick a theme of your choice */
 import original from 'react95/dist/themes/original';
@@ -28,10 +30,19 @@ const GlobalStyles = createGlobalStyle`
   }
 `;
 
+// main background
 const Main = styled.main`
   width: 100%;
   height: 100%;
   background: teal;
+`;
+
+// page style: centered, full page
+const Section = styled.section`
+  width: 100%;
+  height: 100%;
+  position: relative;
+  text-align: center;
 `;
 
 const App = () => (
@@ -39,12 +50,22 @@ const App = () => (
     <GlobalStyles />
     <ThemeProvider theme={original}>
       <Main>
-        <MenuList>
-          <MenuListItem>🎤 Sing</MenuListItem>
-          <MenuListItem>💃🏻 Dance</MenuListItem>
-          <Separator />
-          <MenuListItem disabled>😴 Sleep</MenuListItem>
-        </MenuList>
+        <ReactFullpage
+          render = { ({ state, fullPageApi }) => {
+            return (
+              <ReactFullpage.Wrapper>
+                <Section className='section'>
+                  <MenuList>
+                    <MenuListItem>🎤 Sing</MenuListItem>
+                    <MenuListItem>💃🏻 Dance</MenuListItem>
+                    <Separator />
+                    <MenuListItem disabled>😴 Sleep</MenuListItem>
+                  </MenuList>
+                </Section>
+              </ReactFullpage.Wrapper>
+            );
+          }}
+        />
       </Main>
     </ThemeProvider>
   </div>
