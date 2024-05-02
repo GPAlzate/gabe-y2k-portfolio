@@ -5,6 +5,7 @@ import Center from "./Center";
 import ContentGreetingFont from "./ContentGreetingFont";
 import React, { Component } from "react";
 import AboutMeIcon from "../assets/images/smiley.ico";
+import Resume from "../assets/files/0502-gabe_resume.pdf";
 import "../tufte.css"
 
 import { Anchor } from "react95";
@@ -73,7 +74,7 @@ const HeaderWrapper = styled.div`
                     This portfolio is a work-in-progress
                     <label for="old-portfolio-sidenote" class="margin-toggle sidenote-number"></label>
                     <input type="checkbox" id="old-portfolio-sidenote" class="margin-toggle" /><span class="sidenote">In the meantime, check out my old-but-complete college portfolio <Anchor href="https://gpalzate.github.io">here</Anchor>.</span>,
-                    and it symbolizes a transitionary period in my life and career. Here's my CV, and for any questions feel free to reach out to me at gabsalzate [at] gmail [dot] com.
+                    and it symbolizes a transitionary period in my life and career. Here's my <Anchor href={Resume}>CV</Anchor>, and for any questions feel free to reach out to me at gabsalzate [at] gmail [dot] com.
                   </TextContent>
                   <TextContent>
                     My #1 hobby is...collecting hobbies. Most recently these include 
