@@ -7,7 +7,7 @@ import PortfolioWindow from "./components/PortfolioWindow";
 
 
 /* Pick a theme of your choice */
-import original from 'react95/dist/themes/original';
+import { original, millenium } from 'react95/dist/themes';
 
 /* Original Windows95 font (optional) */
 import ms_sans_serif from 'react95/dist/fonts/ms_sans_serif.woff2';
@@ -27,6 +27,12 @@ const GlobalStyles = createGlobalStyle`
     font-weight: bold;
     font-style: normal
   }
+  @font-face {
+    font-family: 'ms_sans_serif';
+    src: url('${ms_sans_serif_bold}') format('woff2');
+    font-weight: 400;
+    font-style: italic
+  }
   body, input, select, textarea {
     font-family: 'ms_sans_serif';
   }
@@ -36,7 +42,7 @@ const GlobalStyles = createGlobalStyle`
 const Main = styled.main`
   width: 100%;
   height: 100%;
-  background: mintcream;
+  background: ${({ theme }) => theme.desktopBackground};
 `;
 
 // page style: centered, full page
@@ -52,7 +58,7 @@ class App extends Component {
     return (
       <div>
         <GlobalStyles />
-        <ThemeProvider theme={original}>
+        <ThemeProvider theme={millenium}>
           <Main>
             <ReactFullpage
               render={({ state, fullPageApi }) => {
