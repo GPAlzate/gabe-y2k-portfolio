@@ -1,7 +1,7 @@
 {
-  "name": "gabe-y2k-portfolio",
+  "name": "retro",
   "version": "0.1.0",
-  "homepage": "https://gpalzate.github.io/gabe-y2k-portfolio",
+  "homepage": "https://gpalzate.github.io/retro",
   "private": true,
   "dependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
