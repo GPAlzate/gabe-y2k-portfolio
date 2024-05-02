@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/gabe-y2k-portfolio/static/css/main.763346bd.css",
+    "main.js": "/gabe-y2k-portfolio/static/js/main.edaa71e1.js",
+    "static/js/453.d7a8c134.chunk.js": "/gabe-y2k-portfolio/static/js/453.d7a8c134.chunk.js",
+    "static/media/0502-gabe_resume.pdf": "/gabe-y2k-portfolio/static/media/0502-gabe_resume.1e9d7ad2b9c1c42f55b7.pdf",
+    "static/media/ms_sans_serif.woff2": "/gabe-y2k-portfolio/static/media/ms_sans_serif.0348082abb503fb6a8c2.woff2",
+    "static/media/ms_sans_serif_bold.woff2": "/gabe-y2k-portfolio/static/media/ms_sans_serif_bold.7fcf57cc6e87ecddbf64.woff2",
+    "static/media/smiley.ico": "/gabe-y2k-portfolio/static/media/smiley.660b77ae965759f3c43a.ico",
+    "index.html": "/gabe-y2k-portfolio/index.html",
+    "main.763346bd.css.map": "/gabe-y2k-portfolio/static/css/main.763346bd.css.map",
+    "main.edaa71e1.js.map": "/gabe-y2k-portfolio/static/js/main.edaa71e1.js.map",
+    "453.d7a8c134.chunk.js.map": "/gabe-y2k-portfolio/static/js/453.d7a8c134.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.763346bd.css",
+    "static/js/main.edaa71e1.js"
+  ]
+}
