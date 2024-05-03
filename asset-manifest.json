@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/retro/static/css/main.763346bd.css",
-    "main.js": "/retro/static/js/main.58b710c9.js",
+    "main.js": "/retro/static/js/main.f654cf8c.js",
     "static/js/453.0194f5d3.chunk.js": "/retro/static/js/453.0194f5d3.chunk.js",
     "static/media/0502-gabe_resume.pdf": "/retro/static/media/0502-gabe_resume.1e9d7ad2b9c1c42f55b7.pdf",
     "static/media/ms_sans_serif.woff2": "/retro/static/media/ms_sans_serif.0348082abb503fb6a8c2.woff2",
@@ -9,11 +9,11 @@
     "static/media/smiley.ico": "/retro/static/media/smiley.660b77ae965759f3c43a.ico",
     "index.html": "/retro/index.html",
     "main.763346bd.css.map": "/retro/static/css/main.763346bd.css.map",
-    "main.58b710c9.js.map": "/retro/static/js/main.58b710c9.js.map",
+    "main.f654cf8c.js.map": "/retro/static/js/main.f654cf8c.js.map",
     "453.0194f5d3.chunk.js.map": "/retro/static/js/453.0194f5d3.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.763346bd.css",
-    "static/js/main.58b710c9.js"
+    "static/js/main.f654cf8c.js"
   ]
 }
