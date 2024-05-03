@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import ReactFullpage from "@fullpage/react-fullpage";
-import { MenuList, MenuListItem, Separator, styleReset } from 'react95';
+import { styleReset } from 'react95';
 import styled, { createGlobalStyle, ThemeProvider } from 'styled-components';
 
 import PortfolioWindow from "./components/PortfolioWindow";
@@ -56,11 +56,14 @@ const Section = styled.section`
 class App extends Component {
   render() {
     return (
-      <div>
+      <>
         <GlobalStyles />
         <ThemeProvider theme={millenium}>
           <Main>
             <ReactFullpage
+              scrollingSpeed={1000}
+              scrollOverflow={true}
+              scrollBar={false}
               render={({ state, fullPageApi }) => {
                 return (
                   <ReactFullpage.Wrapper>
@@ -73,7 +76,7 @@ class App extends Component {
             />
           </Main>
         </ThemeProvider>
-      </div>
+      </>
     );
   }
 }

@@ -1,5 +1,5 @@
 import { original, millenium } from 'react95/dist/themes';
-import { ScrollView, ScrollViewProps } from 'react95/dist/ScrollView/ScrollView';
+import { ScrollView } from 'react95/dist/ScrollView/ScrollView';
 import styled, {ThemeProvider} from "styled-components";
 import Center from "./Center";
 import ContentGreetingFont from "./ContentGreetingFont";
@@ -58,11 +58,11 @@ const HeaderWrapper = styled.div`
                   <TextContent>
                     My name is Gabriel Alzate
                     <label for="ipa-sidenote" class="margin-toggle sidenote-number"></label>
-                    <input type="checkbox" id="ipa-sidenote" class="margin-toggle" /><span class="sidenote">For the linguists: [al'zate]. Feel free to copy-paste the IPA into <Anchor href='http://ipa-reader.xyz/'>http://ipa-reader.xyz/</Anchor> to hear it spoken!</span>,
+                    <input type="checkbox" id="ipa-sidenote" class="margin-toggle" /><span class="sidenote">for the linguists: [al'zate]. feel free to copy-paste the IPA into <Anchor href='http://ipa-reader.xyz/'>http://ipa-reader.xyz/</Anchor> to hear it spoken!</span>,
                     but you can call me Gabe. I am currently a backend software engineer on the
                     quoting and ordering team
                     <label for="qos-sidenote" class="margin-toggle sidenote-number"></label>
-                    <input type="checkbox" id="qos-sidenote" class="margin-toggle" /><span class="sidenote">If you've ever redeemed a LinkedIn Premium free trial (or perhaps—even purchased a Premium plan?), chances are you used what I built!</span>{' '}
+                    <input type="checkbox" id="qos-sidenote" class="margin-toggle" /><span class="sidenote">if you've ever redeemed a LinkedIn Premium free trial (or perhaps—even purchased a Premium plan?), chances are you used what I built!</span>{' '}
                     at <Anchor href="https://www.linkedin.com/">LinkedIn</Anchor>.
                   </TextContent>
                   <TextContent>
@@ -71,10 +71,10 @@ const HeaderWrapper = styled.div`
                     <Anchor href="https://www.pomona.edu/">Pomona College</Anchor>, and now I'm based in San Francisco!
                   </TextContent>
                   <TextContent>
-                    This portfolio is a work-in-progress
+                    This portfolio is a work-in-progress retro revival, perhaps symbolizing
                     <label for="old-portfolio-sidenote" class="margin-toggle sidenote-number"></label>
-                    <input type="checkbox" id="old-portfolio-sidenote" class="margin-toggle" /><span class="sidenote">In the meantime, check out my old-but-complete college portfolio <Anchor href="https://gpalzate.github.io">here</Anchor>.</span>,
-                    and it symbolizes a transitionary period in my life and career. Here's my <Anchor href={Resume}>CV</Anchor>, and for any questions feel free to reach out to me at gabsalzate [at] gmail [dot] com.
+                    <input type="checkbox" id="old-portfolio-sidenote" class="margin-toggle" /><span class="sidenote">take a look at my outdated yet more modern college portfolio <Anchor href="https://gpalzate.github.io">here</Anchor>. out with the new, in with the old i guess :P</span>{' '}
+                    a transitionary period in my life and career. Here's my <Anchor href={Resume}>CV</Anchor>, and for any questions feel free to reach out to me at gabsalzate [at] gmail [dot] com.
                   </TextContent>
                   <TextContent>
                     My #1 hobby is...collecting hobbies. Most recently these include 
