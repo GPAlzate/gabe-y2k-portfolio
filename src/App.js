@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import ReactFullpage from "@fullpage/react-fullpage";
 import { styleReset } from 'react95';
 import styled, { createGlobalStyle, ThemeProvider } from 'styled-components';
+import FullPage from "./components/FullPage";
 
 import PortfolioWindow from "./components/PortfolioWindow";
 
@@ -41,7 +42,7 @@ const GlobalStyles = createGlobalStyle`
 // main background
 const Main = styled.main`
   width: 100%;
-  height: 100%;
+  height: 100vh;
   background: ${({ theme }) => theme.desktopBackground};
 `;
 
@@ -56,27 +57,18 @@ const Section = styled.section`
 class App extends Component {
   render() {
     return (
-      <>
-        <GlobalStyles />
-        <ThemeProvider theme={millenium}>
+      <ThemeProvider theme={millenium}>
+        <>
+          <GlobalStyles />
           <Main>
-            <ReactFullpage
-              scrollingSpeed={1000}
-              scrollOverflow={true}
-              scrollBar={false}
-              render={({ state, fullPageApi }) => {
-                return (
-                  <ReactFullpage.Wrapper>
-                    <Section className='section'>
-                      <PortfolioWindow />
-                    </Section>
-                  </ReactFullpage.Wrapper>
-                );
-              }}
-            />
+            <Section className='section'>
+              <FullPage>
+                <PortfolioWindow />
+              </FullPage>
+            </Section>
           </Main>
-        </ThemeProvider>
-      </>
+        </>
+      </ThemeProvider>
     );
   }
 }
